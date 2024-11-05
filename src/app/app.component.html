@@ -1,0 +1,11 @@
+<app-layout *ngIf="isUserLoggedIn(); else notAuthorized">
+  <router-outlet></router-outlet>
+</app-layout>
+
+<ng-template #notAuthorized>
+  <!-- <app-layout2>
+  <router-outlet></router-outlet>
+</app-layout2> -->
+<router-outlet></router-outlet>
+
+</ng-template>
